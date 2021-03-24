@@ -1,0 +1,54 @@
+java 개발세팅 ★ 집에가서 해볼 것
+1) jdk 1.8 (컴파일)
+오라클 사이트에서 다운로드
+
+제어판 시스템 고급시스템 환경 변수
+시스템 변수
+변수이름 JAVA_HOME
+변수값 jdk경로 통해 탐색기 활용 복사해서 세팅
+ex)C:\Program Files\Java\jdk1.8.0_261\bin
+
+Path선택 편집 %JAVE_HOME%\bin
+= C:\Program Files\Java\jdk1.8.0_261\bin
+
+*PATH' 환경변수에 있는 디렉토리에서 실행파일을 알아서 찾아준다. 
+이 때 경로명들을 콜론(:)으로 구분해서 가지고 있다. 
+:콜론 왼쪽에 있는 것 부터 순차적으로 찾아나간다. 
+PATH에 등록된 디렉토리를 먼저 찾아가고 이 디렉토리 내에 없으면 
+프로그램이 실행되지 않는다.
+
+2) 이클립스 (코드작성을 위한 에디터)
+https://www.eclipse.org/downloads/
+실행 Java Developers Install
+Developers실행 Enterprise X
+workspace 설정 (소스파일 만들어놓기 ex) java_source)
+Create a Java Projecet
+프로젝트 네임 설정O, 모듈설정X
+src New Package Class들어가서
+name작성 public static void main(String[]args)체크
+package week01.Day2;
+
+public class Ex01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+    //변수선언
+	int N=1, Sum=0;
+		
+	//입력
+
+    //처리
+	while( N <=10){
+	  Sum= Sum +N;
+	  N= N+1;
+		
+	}	
+	//츌력
+	System.out.println("합계=" +Sum);
+	}
+}
+
+*System.out.println = 약속된 출력 기호
+;세미콜론 - 줄바꿀 때 써줘야하는 약속된 문법기호
+}블록 - 블록을 정해주지않으면 첫째줄만 반복
+★순서도 반복해서 만들어 볼 것
